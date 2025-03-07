@@ -1,3 +1,16 @@
-<div class="navbar">
-  <img class="h-100" src="logo.png"/>
-</div>
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" (click)="changeTheme()">
+    <mat-icon>{{ isDarkMode() ? 'wb_sunny' : 'nights_stay'}}</mat-icon>
+  </button>
+</mat-toolbar>
