@@ -2,6 +2,7 @@ import { Component, EventEmitter, Output, output, signal, WritableSignal } from 
 import { toObservable } from '@angular/core/rxjs-interop';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BehaviorSubject, from, of } from 'rxjs';
 

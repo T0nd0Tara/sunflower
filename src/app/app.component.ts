@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { provideRouter, RouterOutlet, Routes, withDebugTracing } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 @Component({
@@ -10,7 +10,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   standalone: true,
 })
 export class AppComponent {
-  title = 'sunflower';
   public changeMode(isDarkMode: boolean) {
     if (isDarkMode)
       document.body.classList.add('dark-mode');

@@ -1,15 +1,11 @@
 <mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
+  <img class="h-75 me-2" src="logo.png"/>
+  <div class="me-2">Sunflower</div>
+
+  <a mat-button href="workers">Workers</a>
+  <a mat-button href="tasks">Tasks</a>
+  <a mat-button href="broker">Broker</a>
+  <span class="spacer"></span>
   <button mat-icon-button class="example-icon" (click)="changeTheme()">
     <mat-icon>{{ isDarkMode() ? 'wb_sunny' : 'nights_stay'}}</mat-icon>
   </button>
