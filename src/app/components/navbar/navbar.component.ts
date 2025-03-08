@@ -13,7 +13,7 @@ import { BehaviorSubject, from, of } from 'rxjs';
   standalone: true,
 })
 export class NavbarComponent {
-  public isDarkMode: WritableSignal<boolean> = signal(true);
+  public isDarkMode: WritableSignal<boolean> = signal(false);
   @Output("isDarkMode") isDarkModeChange = toObservable(this.isDarkMode);
 
   public changeTheme() {
